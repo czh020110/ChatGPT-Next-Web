@@ -28,5 +28,6 @@ export const EN_MASKS: BuiltinMask[] = [
     lang: "en",
     builtin: true,
     createdAt: 1688899480412,
+    hideContext: true
   },
 ];

@@ -26,6 +26,8 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480523,
+    hideContext: true
+
   },
     {
     avatar: "1f612",
@@ -52,6 +54,8 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480522,
+    hideContext: true
+
   },
      {
     avatar: "1f61c",
@@ -78,6 +82,7 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480529,
+    hideContext: true
   },
 
    {
@@ -105,6 +110,7 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480521,
+    hideContext: true
   },
      {
     avatar: "1f602",
@@ -131,6 +137,7 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480520,
+    hideContext: true
   },
   {
     avatar: "1f617",
@@ -164,6 +171,7 @@ export const CN_MASKS: BuiltinMask[] = [
     lang: "cn",
     builtin: true,
     createdAt: 1688899480537,
+    hideContext: true
   },
   
 

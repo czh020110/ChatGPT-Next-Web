@@ -550,6 +550,20 @@ export function ChatActions(props: {
         icon={<MaskIcon />}
       />
 
+      <ChatAction
+        text={Locale.Chat.InputActions.Clear}
+        icon={<BreakIcon />}
+        onClick={() => {
+          chatStore.updateCurrentSession((session) => {
+            if (session.clearContextIndex === session.messages.length) {
+              session.clearContextIndex = undefined;
+            } else {
+              session.clearContextIndex = session.messages.length;
+              session.memoryPrompt = ""; // will clear memory
+            }
+          });
+        }}
+      />
 
       <ChatAction
         onClick={() => setShowModelSelector(true)}
@@ -575,23 +589,6 @@ export function ChatActions(props: {
           }}
         />
       )}
-      </div>
-      <div>
-        <ChatAction
-          text={Locale.Chat.InputActions.Clear}
-          icon={<BreakIcon />}
-          onClick={() => {
-            chatStore.updateCurrentSession((session) => {
-              if (session.clearContextIndex === session.messages.length) {
-                session.clearContextIndex = undefined;
-              } else {
-                session.clearContextIndex = session.messages.length;
-                session.memoryPrompt = ""; // will clear memory
-              }
-            });
-          }}
-        />
-      </div>
     </div>
   );
 }

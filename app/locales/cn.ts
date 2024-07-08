@@ -376,8 +376,8 @@ const cn = {
     },
   },
   Store: {
-    DefaultTopic: "新的聊天",
-    BotHello: "你好呀！",
+    DefaultTopic: "Hey!",
+    BotHello: "Hellow there！",
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,

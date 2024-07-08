@@ -382,7 +382,7 @@ const en: LocaleType = {
     },
   },
   Store: {
-    DefaultTopic: "New Conversation",
+    DefaultTopic: "Hey!",
     BotHello: "Hello there!",
     Error: "Something went wrong, please try again later.",
     Prompt: {

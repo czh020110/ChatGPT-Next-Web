@@ -56,6 +56,87 @@ export const CN_MASKS: BuiltinMask[] = [
     hideContext: true
   },
      {
+    avatar: "1f318",
+    name: "ChatGPT 4",
+    context: [
+      {
+        id: "gpt4-0",
+        role: "system",
+        content:
+          "Normally respond in Chinese. When responding to users, in order to make your replies more understandable, please use Markdown syntax as much as possible to render the text (if there's any formula-related content, please use LaTeX format and render it with $ symbols in Markdown for the user and use Markdown syntax strictly and correctly, but don't force formulas where they're not needed). This will make the output structured, more organized, visually appealing, and readable.",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4",
+      temperature: 1,
+      max_tokens: 20000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 8,
+      compressMessageLengthThreshold: 3000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480513,
+    hideContext: true
+  },
+       {
+    avatar: "1f311",
+    name: "ChatGPT 4 all",
+    context: [
+      {
+        id: "gpt4all-0",
+        role: "system",
+        content:
+          "Normally respond in Chinese. When responding to users, in order to make your replies more understandable, please use Markdown syntax as much as possible to render the text (if there's any formula-related content, please use LaTeX format and render it with $ symbols in Markdown for the user and use Markdown syntax strictly and correctly, but don't force formulas where they're not needed). This will make the output structured, more organized, visually appealing, and readable.",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4-all",
+      temperature: 1,
+      max_tokens: 20000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 8,
+      compressMessageLengthThreshold: 3000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480513,
+    hideContext: true
+  },
+         {
+    avatar: "1f315",
+    name: "Claude 3 opus",
+    context: [
+      {
+        id: "claude3opus-0",
+        role: "system",
+        content:
+          "Normally respond in Chinese. When responding to users, in order to make your replies more understandable, please use Markdown syntax as much as possible to render the text (if there's any formula-related content, please use LaTeX format and render it with $ symbols in Markdown for the user and use Markdown syntax strictly and correctly, but don't force formulas where they're not needed). This will make the output structured, more organized, visually appealing, and readable.",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "claude-3-opus-20240229",
+      temperature: 1,
+      max_tokens: 20000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 8,
+      compressMessageLengthThreshold: 3000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480513,
+    hideContext: true
+  },
+     {
     avatar: "1f9d0",
     name: "C Language Teacher",
     context: [
@@ -68,7 +149,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -95,7 +176,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -123,7 +204,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -165,7 +246,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -188,7 +269,7 @@ export const CN_MASKS: BuiltinMask[] = [
         id: "ocr-0",
         role: "system",
         content:
-          "You are an OCR, recognizing all the content in the image without adding any explanations, strictly following the layout format of the text in the image, and making special treatments only in the following situations.① When handling line breaks, use markdown format: add 2 spaces + newline character at the end of different lines, and use two newline characters for different paragraphs.② All math-related formulas (including formulas like f(x) that can be directly input) should be entirely in markdown format (e.g., $ math formula $ in between, There should be a space between the formula and the $ symbol.) (you must check if the symbols are correctly recognized during identification).③ Code should be in code block format, such as ```code```.④ Except for the above situations, do not add markdown code symbols, such as title symbol #, bold symbol *, etc.",
+          "You are an OCR, recognizing all the content in the image without adding any explanations, strictly following the layout format of the text in the image, and making special treatments only in the following situations.① When handling line breaks, use markdown format: add 2 spaces + newline character at the end of different lines, and use two newline characters for different paragraphs.② All math-related formulas (including formulas like f(x) that can be directly input) should be entirely in markdown format (e.g., $ math formula $ in between, There should be a space between the formula and the $ symbol. Curly braces should also be used in LaTeX) (you must check if the symbols are correctly recognized during identification).③ Code must be in code block format, such as ```language\n code \n``` （The language needs to be identified and marked in the code block）.④ Except for the above situations, do not add markdown code symbols, such as title symbol #, bold symbol *, etc.",
         date: "",
       },
     ],
@@ -220,7 +301,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -247,7 +328,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,

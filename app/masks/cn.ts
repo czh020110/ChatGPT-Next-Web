@@ -83,6 +83,33 @@ export const CN_MASKS: BuiltinMask[] = [
     hideContext: true
   },
        {
+    avatar: "1f312",
+    name: "ChatGPT 4 turbo preview",
+    context: [
+      {
+        id: "gpt4turbo-0",
+        role: "system",
+        content:
+          "Normally respond in Chinese. When responding to users, in order to make your replies more understandable, please use Markdown syntax as much as possible to render the text (if there's any formula-related content, please use LaTeX format and render it with $ symbols in Markdown for the user and use Markdown syntax strictly and correctly, but don't force formulas where they're not needed). This will make the output structured, more organized, visually appealing, and readable.",
+        date: "",
+      },
+    ],
+    modelConfig: {
+      model: "gpt-4-turbo-preview",
+      temperature: 1,
+      max_tokens: 20000,
+      presence_penalty: 0,
+      frequency_penalty: 0,
+      sendMemory: true,
+      historyMessageCount: 8,
+      compressMessageLengthThreshold: 3000,
+    },
+    lang: "cn",
+    builtin: true,
+    createdAt: 1688899480513,
+    hideContext: true
+  },
+       {
     avatar: "1f311",
     name: "ChatGPT 4 all",
     context: [
@@ -149,7 +176,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4",
+      model: "gpt-4-turbo-preview",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -176,7 +203,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4",
+      model: "gpt-4-turbo-preview",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -204,7 +231,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4",
+      model: "gpt-4-turbo-preview",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -246,7 +273,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4",
+      model: "gpt-4-turbo-preview",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -301,7 +328,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4",
+      model: "gpt-4-turbo-preview",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,
@@ -328,7 +355,7 @@ export const CN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "gpt-4",
+      model: "gpt-4-turbo-preview",
       temperature: 1,
       max_tokens: 20000,
       presence_penalty: 0,

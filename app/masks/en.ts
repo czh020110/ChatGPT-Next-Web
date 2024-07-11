@@ -16,7 +16,7 @@ export const EN_MASKS: BuiltinMask[] = [
       },
     ],
     modelConfig: {
-      model: "claude-3-5-sonnet-20240620",
+      model: "gpt-4-turbo-preview",
       temperature: 0.5,
       max_tokens: 20000,
       presence_penalty: 0,

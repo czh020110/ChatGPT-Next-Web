@@ -136,6 +136,22 @@ function Screen() {
     loadAsyncGoogleFont();
   }, []);
 
+  // 添加监听 Escape 键的逻辑
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        // 发送消息给父窗口
+        window.parent.postMessage('close-plugin', '*');
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
     <div
       className={
